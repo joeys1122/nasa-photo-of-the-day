@@ -1,9 +1,19 @@
 import React from "react";
+import styled from "styled-components";
 
-export default function Title(props) {
+const StyledTitle = styled.h1`
+  text-transform: uppercase;
+  transition: font-size 1s;
+
+  &:hover {
+    font-size: 3em;
+  }
+`
+
+export default function Title() {
   return (
     <>
-      <h1>{props.data.title}</h1>
+      <StyledTitle>Astronomy Photo Of The Day</StyledTitle>
     </>
   )
 }

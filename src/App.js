@@ -30,15 +30,9 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p>
-      <div className="Title">
-        <Title data={apodData} />
-      </div>
-      <div className="Section">
-        <Section data={apodData} />
-      </div>
-      <div className="Footer">
-        <Footer data={apodData} />
-      </div>
+      <Title />
+      <Section data={apodData} />
+      <Footer />
     </div>
   );
 }

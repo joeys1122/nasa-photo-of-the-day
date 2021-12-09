@@ -1,9 +1,19 @@
 import React from "react";
+import styled from "styled-components";
 
-export default function Footer(props) {
+const StyledFooter = styled.p`
+  color: #555555;
+  font-style: italic;
+
+  &:hover {
+    font-style: normal;
+  }
+`
+
+export default function Footer() {
   return (
     <>
-      <span>Copyright {props.data.copyright}</span>
+      <StyledFooter>Made by Joe Stanton</StyledFooter>
     </>
   )
 }
